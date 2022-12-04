@@ -30,6 +30,7 @@ img {
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
+	background-color: #FBFBFB;
 }
 
 /* Remove underlines from links */
@@ -67,7 +68,7 @@ you work on and the intended audience */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: #C4E7C0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
