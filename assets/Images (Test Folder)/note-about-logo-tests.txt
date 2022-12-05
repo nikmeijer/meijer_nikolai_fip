@@ -1,7 +1,0 @@
-I have tried multiple times to export in a way that the stroke scales.
-There was no error.
-I was attempting to place the svg's into xd and then resize. This simply happens with all svg's in xd.
-The strokes do scale.
-
--Nikolai Meijer,
-December 4, 00:48
