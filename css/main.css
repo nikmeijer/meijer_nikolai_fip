@@ -467,20 +467,26 @@ you work on and the intended audience */
 /* gallery page */
 
 #gallery-hero-con {
-	background-color: #aaaaaa;
+	background-color: rgba(251, 251, 251, 0.5);
+	background-blend-mode: overlay;
 	background: url("https://via.placeholder.com/1920x580");
 	height: 580px;
 }
 
 #gallery-text {
 	grid-column: 1/9;
-	/* Remove as content will dictate height */
-	height: 200px;
+	color: #222222;
 	margin-top: 100px;
+	font-size: 28px;
+}
+
+#gallery-text h2 {
+	font-size: 48px;
+	color: #222222;
 }
 
 #gallery-controls {
-	margin-top: 200px;
+	margin-top: 160px;
 	grid-column: 6/8;
 	display: flex;
 	justify-content: center;
@@ -488,7 +494,7 @@ you work on and the intended audience */
 }
 
 .dot {
-	background-color: #dddddd;
+	background-color: #FBFBFB;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
@@ -498,12 +504,36 @@ you work on and the intended audience */
 #gallery h2 {
 	grid-column: 1/-1;
 	text-align: center;
+	padding: 12px;
+	border-radius: 28px;
+	background-color: #FFACAC; 
+	font-size: 48px;
+	color: #5F1A1A;
   }
 
 .gallery-box {
-	background-color: #ddd;
+	background-color: #FEEAAB;
 	grid-column: span 4 / span 4;
-	/* Remove as content will dictate height */
-	height: 507px;
 	margin-bottom: 20px;
+	color: #222222;
+	font-size: 36px;
+}
+
+.gallery-box img {
+	border-bottom: solid 12px #5F1A1A;
+}
+
+
+.gallery-box p:first-of-type {
+	margin-top: 28px;
+}
+.gallery-box p {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+}
+
+.gallery-box p:last-of-type {
+	margin-bottom: 28px;
 }
