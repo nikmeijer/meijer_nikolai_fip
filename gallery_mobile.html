@@ -2,25 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Street Cat Mag - Gallery</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!-- students must convert divs to semantic tags -->
+    <h1 class="hidden">Street Cat Magazine</h1>
 	<div id="container">
         
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
+        <section id="header-con">
+            <h2 class="hidden">Header Container</h2>
+            <header id="main-header" class="grid-con">
+                <h2 class="hidden">Header</h2>
+                <img src="images/scm-logo-mobile.svg" alt="Street Cat Mag Logo" id="header-logo">
                  <div id="mobile-nav">
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
                  </div>
-            </div>    
-        </div> 
+            </header>    
+        </section>
 
         <main>
+            <h2 class="hidden">Content</h2>
             <div id="hero-gallery-con">
                 <div class="grid-con">
                     <div id="hero-gallery-text" class="box-color">
@@ -56,16 +59,21 @@
             </div>              
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
+        <section id="footer-con">
+            <h2 class="hidden">Footer Container</h2>
+            <footer class="grid-con">
+                <h2 class="hidden">Footer</h2>
                 <div id="footer-box">
+                    <img src="images/scm-logo-mobile.svg" alt="Street Cat Mag Logo">
                 </div>
                 <div id="footer-newsletter">
+                    <a href="#">Newsletter - Sign Up</a>
                 </div>
-                <div id="footer-newsletter2">
+                <div id="footer-copyright">
+                    <p>Street Cat Magazine 2022</p>
                 </div>
-            </div>
-        </div>
+            </footer>
+        </section>
     </div> 
 </body>
 </html>
