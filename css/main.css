@@ -69,38 +69,139 @@ you work on and the intended audience */
 
 #header-con {
 	background-color: #C4E7C0;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: sticky;
+	top: 0px;
 }
 
 #header-box1 {
 	grid-column: 1/3;
-	/* Remove as content will dictate height */
+	padding-right: 28px;
+}
+
+#header-box1 img {
 	height: 80px;
+	display: inline-block;
+	margin-left: -80px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	padding: 2px;
+	position: absolute;
+}
+
+#header-box1 h2 {
+	display: inline-block;
+	font-size: 36px;
+	position: absolute;
+	margin-left: 28px;
+	margin-right: 28px;
 }
 
 #main-nav {
 	grid-column: 3/11;
-	/* Remove as content will dictate height */
+	height: 80px;
+	padding-top: 28px;
+	margin-left: 64px;
 	height: 80px;
 }
 
-#header-box2 {
+#main-nav ul li {
+	display: inline;
+	font-size: 28px;
+	margin-left: 28px;
+	margin-right: 28px;
+	padding: 10px;
+}
+
+#main-nav ul li a {
+	color: #222222;
+}
+
+#main-nav ul li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 5px solid #222222;
+}
+
+#main-nav ul li a.active-page {
+	color: #FBFBFB;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #222222;
+}
+
+#search-and-login {
 	grid-column: 11/-1;
-	/* Remove as content will dictate height */
 	height: 80px;
+	padding-top: 28px;
+	margin-left: -48px;
+}
+
+#search-and-login ul li {
+	display: inline;
+	font-size: 28px;
+	margin-left: -36px;
+	margin-right: 28px;
+	padding: 8px;
+}
+
+#search-and-login ul li a {
+	color: #222222;
+}
+
+#search-and-login ul li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 5px solid #222222;
+}
+
+#search-vector {
+	height: 28px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#login-vector {
+	height: 28px;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 /* Specific to index page desktop  */
 
 #hero {
 	margin-top: 100px;
+	margin-bottom: -50px;
+	padding-bottom: 100px;
+	border-bottom: solid 2px #222222;
 }
 
 #hero-text {
 	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 582px;
+	margin-right: 48px;
+}
+
+#hero-title {
+	font-size: 48px;
+}
+
+#hero-text p {
+	font-size: 28px;
+}
+
+#read-button {
+	background-color: #518EF9;
+	font-size: 28px;
+	color: #FBFBFB;
+	margin-top: 100px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 36px;
+	padding-right: 36px;
+	border-radius:12px;
+	position: absolute;
+}
+
+#read-button:hover {
+	background-color: #A6C5FB;
 }
 
 #hero-image {
@@ -109,52 +210,78 @@ you work on and the intended audience */
 	height: 582px;
 }
 
-#products {
+#latest {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
-#products h2 {
+#latest p {
+	margin: 48px;
+	font-size: 28px;
+}
+
+#latest h2 {
 	grid-column: 1/-1;
 	text-align: center;
+	font-size: 48px;
 }
 
-#product1 {
+#latest1 {
 	grid-column: 1/5;
-	/* Remove as content will dictate height */
-	height: 507px;
 }
 
-#product2 {
+#latest2 {
 	grid-column: 5/9;
-	/* Remove as content will dictate height */
-	height: 507px;
 }
 
-#product3 {
+#latest3 {
 	grid-column: 9/-1;
-	/* Remove as content will dictate height */
-	height: 507px;
 }
 
-.product-box {
-	background-color: #ddd;
+.latest-box {
+	background-color: #E0F2DE;
 }
 
 #about-con {
-	background-color: #ddd;
+	background-color: #FFDBDB;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 #about-title {
 	text-align: center;
+	font-size: 48px;
 }
 
 #about-text {
 	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 700px;
+	margin-right: 48px;
+}
+
+#about-text h3 {
+	margin-top: 64px;
+	font-size: 48px;
+}
+
+#about-text p {
+	font-size: 28px;	
+}
+
+#learn-button {
+	background-color: #FEECEC;
+	font-size: 28px;
+	color: #222222;
+	margin-top: 200px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 36px;
+	padding-right: 36px;
+	border-radius:12px;
+	position: absolute;
+}
+
+#learn-button:hover {
+	background-color: #FFDBDB;
 }
 
 #about-image {
@@ -170,53 +297,169 @@ you work on and the intended audience */
 
 #contact-text {
 	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 700px;
+	margin-right: 48px;
+}
+
+#contact-text h3 {
+	font-size: 48px;
+}
+
+#contact-text p {
+	font-size: 28px;
+	padding-bottom: 48px;
+}
+
+#contact-text p:last-of-type {
+	padding-bottom: 0px;
 }
 
 #contact-form {
 	grid-column: 8/-1;
-	/* Remove as content will dictate height */
-	height: 700px;
+	background-color: #518EF9;
+	color: #FBFBFB;
+	font-size: 28px;
+	margin-top: 48px;
+	margin-right: 48px;
+	padding: 36px;
+	padding-top: 64px;
+	padding-bottom: 32px;
+}
+
+#contact-form label {
+	display: inline-block;
+	padding-bottom: 32px;
+	position: relative;
+}
+
+#contact-form input {
+	display: inline-block;
+	font-size: 28px;
+	border: 0;
+}
+
+#contact-form textarea {
+	font-size: 28px;
+	width: 75%;
+}
+
+#submit-form {
+	background-color: #A6C5FB;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 36px;
+	padding-right: 36px;
+	border-radius:12px;
+	position: absolute;
+}
+
+#submit-form:hover {
+	background-color: #518EF9;
 }
 
 /*Common page elements  */
 
 #footer-con {
-	background-color: #aaaaaa;
+	background-color: #C4E7C0;
 	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 }
 
-#footer-logo {
+#footer-logo img {
 	grid-column: 1/3;
-	/* Remove as content will dictate height */
 	height: 80px;
+	display: inline-block;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	padding: 2px;
+	position: absolute;
+}
+
+#footer-logo h2 {
+	display: inline-block;
+	font-size: 36px;
+	position: absolute;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 #footer-nav {
 	grid-column: 3/-1;
-	/* Remove as content will dictate height */
 	height: 80px;
-	margin-bottom: 100px;
+	padding-top: 28px;
+	margin-left: 100px;
+	margin-bottom: 64px;
+	height: 80px;
+	position: relative;
 }
 
-#footer-newsletter1 {
-	grid-column: 1/5;
-	/* Remove as content will dictate height */
-	height: 80px;
+#footer-nav ul li {
+	display: inline;
+	font-size: 28px;
+	margin-left: 28px;
+	margin-right: 28px;
+	padding: 10px;
 }
 
-#footer-newsletter2 {
-	grid-column: 5/7;
-	/* Remove as content will dictate height */
-	height: 80px;
+#footer-nav ul li a {
+	color: #222222;
 }
 
-#footer-social {
+#footer-nav ul li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 5px solid #222222;
+}
+
+#footer-nav ul li a.active-page {
+	color: #FBFBFB;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #222222;
+}
+
+#newsletter-form {
+	grid-column: 1/7;
+	height: 80px;
+	display: inline-block;
+	font-size: 28px;
+	color: #222222;
+}
+
+#newsletter-form label {
+	display: inline-block;
+	padding-bottom: 32px;
+	position: relative;
+}
+
+#newsletter-form input {
+	display: inline-block;
+	color: #222222;
+	font-size: 28px;
+	border: none;
+	margin-right: 32px;
+}
+
+#submit-nl-form {
+	display: inline-block;
+	background-color: #E0F2DE;
+	margin-top: -12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 36px;
+	padding-right: 36px;
+	border-radius:12px;
+	position: absolute;
+}
+
+#submit-nl-form:hover {
+	background-color: #C4E7C0;
+}
+
+#footer-copyright {
 	grid-column: 11/-1;
-	/* Remove as content will dictate height */
 	height: 80px;
+	margin-top: 64px;
+	margin-left: -100px;
+	font-size: 28px;
+	color: #222222;
 }
 
 

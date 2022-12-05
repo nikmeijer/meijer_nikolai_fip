@@ -10,69 +10,157 @@
     <h1 class="hidden">Street Cat Magazine</h1>
 	<div id="container">
         
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <div id="header-box1" class="box-color">
-                    
+        <section id="header-con">
+            <header id="main-header" class="grid-con">
+                <h2 class="hidden">Header</h2>
+                <div id="header-box1">
+                    <img src="images/scm-logo-wink.svg" alt="Street Cat Mag Logo" class="logo">
+                    <h2>Street Cat Mag</h2>
                 </div>
-                <div id="main-nav" class="box-color">
+                <div id="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active-page">Home</a>
+                        </li>
+                        <li>
+                            <a href="latest.html">Latest</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="submissions.html">Submissions</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="header-box2" class="box-color">
+                <div id="search-and-login">
+                    <h2 class="hidden">Search and Login</h4>
+                    <ul>
+                        <li>
+                            <a href="search">Search</a> <!--I do not know how search functionality is linked so i have just placed an unusable link-->
+                            <a href="search"><img src="images/scm-search-vector.svg" alt="search magnifying glass" id="search-vector"></a>
+                        </li>
+                        <li>
+                            <a href="login.html">Log In</a>
+                            <a href="login.html"><img src="images/scm-login-lock-vector.svg" alt="login lock" id="login-vector"></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div> 
+            </header>
+        </section> 
 
         <main>
-            <div class="grid-con" id="hero">
-                <div id="hero-text" class="box-color">
+            <h2 class="hidden">Content</h2>
+            <article class="grid-con" id="hero">
+                <h2 class="hidden">Hero Content</h2>
+                <div id="hero-text">
+                    <h3 id="hero-title">Featured: How you can help street cats this winter!</h3>
+                    <p>In this article from our latest edition, we look at different ways YOU can help out your local street kitties this winter. There are many things people don't know about outdoor cats in the winter. Not all the cats you see on your street have a home to go to when it gets cold. By learning more on this subject you can make a difference, and even save a cat's life...</p>
+                    <a href="#" id="read-button">Read Story</a>
                 </div>
                 <img src="https://via.placeholder.com/674x582" alt="image" id="hero-image">
-            </div>  
+            </article>  
 
-            <div class="grid-con" id="products">
-                <h2>Blandit At Tuctor</h2>
-                <div class="product-box" id="product1">
+            <article class="grid-con" id="latest">
+                <h2>The Latest</h2>
+                <div class="latest-box" id="latest1">
                     <img src="https://via.placeholder.com/536x242" alt="image">
+                    <p>Featured Cats from our latest release!</p>
                 </div>
-                <div class="product-box" id="product2">
+                <div class="latest-box" id="latest2">
                     <img src="https://via.placeholder.com/536x242" alt="image">
+                    <p>See and read about the house cats from our latest release!</p>
                 </div>
-                <div class="product-box" id="product3">
+                <div class="latest-box" id="latest3">
                     <img src="https://via.placeholder.com/536x242" alt="image">
+                    <p>See and read about the street cats from our latest release!</p>
                 </div>
-            </div>
+            </article>
 
-            <h2 id="about-title">Blandit At Tuctor</h2>
-            <div id="about-con">
-                <div class="grid-con" id="about">
-                    <div id="about-text" class="box-color">
+            <h2 id="about-title">Our Community</h2>
+            <section id="about-con">
+                <article class="grid-con" id="about">
+                    <h2 class="hidden">About Our Community</h2>
+                    <div id="about-text">
+                        <h3>Join our community of dedicated contributors today!</h3>
+                        <p>Think your cat has what it takes to be a model? We do too! Send us photos of your cat and fill out a submission form for a chance for your lucky feline to appear in the next edition of Street Cat Mag. We accept street cats, house cats, and everything in between!</p>
+                        <a href="#" id="learn-button">Learn More</a>
                     </div>
                     <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
-                </div>
-            </div>
+                </article>
+            </section>
             
-            <div class="grid-con" id="contact">
-                <div id="contact-text" class="box-color">
+            <section class="grid-con" id="contact">
+                <h2 class="hidden">Contact Us</h2>
+                <div id="contact-text">
+                    <h3>Feel free to contact us</h3>
+                    <p>If you have any questions, comments, concerns, or anything at all that you would like to tell us, please do not hesitate to contact us!  Our customers are very important to us, and we want to ensure the best experience possible!</p>
+                    <p>For cat and article submissions, please refer to our Submissions Page</p>
+                    <p>For business inquiries, please contact our business email address, streetcatmagazine@gmail.com</p>
                 </div>
-                <div id="contact-form" class="box-color">
-                </div>
-            </div> 
+
+                <form id="contact-form" method="post" action="#">
+                    <label for="name">Name: </label>        
+                    <input id="name" name="name" type="text"><br><br>
+
+                    <label for="email">Email Address: </label>      
+                    <input id="email" name="email" type="email"><br><br>
+
+                    <label for="subject">Subject: </label>        
+                    <input id="subject" name="subject" type="text"><br><br>
+
+                    <label for="comments" class="hidden">Your Comments and Suggestions: </label>
+                    <textarea id="comments" name="comments">Please add your comments here!</textarea><br><br>
+
+                    <input type="submit" value="Submit" id="submit-form"><br><br>
+                </form>
+            </section> 
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
+        <section id="footer-con">
+            <footer class="grid-con" id="footer">
+                <h2 class="hidden">Footer</h2>
+                <div id="footer-logo">
+                    <img src="images/scm-logo-mobile.svg" alt="Street Cat Mag Logo with text" class="logo">
+                    <h2>Street Cat Mag</h2>
                 </div>
-                <div id="footer-nav" class="box-color">
+                <div id="footer-nav">
+                    <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active-page">Home</a>
+                        </li>
+                        <li>
+                            <a href="latest.html">Latest</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="submissions.html">Submissions</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="footer-newsletter1" class="box-color">
+                <div id="footer-newsletter1">
+                    <form id="newsletter-form" method="post" action="#">
+                        <label for="email">Newsletter - Sign Up</label>      
+                        <input id="nl-signup" name="email" type="email" placeholder="Email Address">
+                        <input type="submit" value="Submit" id="submit-nl-form">
+                    </form>
                 </div>
-                <div id="footer-newsletter2" class="box-color">
+                <div id="footer-copyright">
+                    <h2 class="hidden">Copyright</h2>
+                    <p>Street Cat Magazine 2022</p>
                 </div>
-                <div id="footer-social" class="box-color">
-                </div>
-            </div>
-        </div>
+            </footer>
+        </section>
 
     </div> 
 </body>
