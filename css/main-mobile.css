@@ -27,8 +27,10 @@ img {
 
 /*html selectors*/
 
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Molengo";
 	font-size: 12px;
 	background-color: #FBFBFB;
 }
@@ -93,8 +95,9 @@ you work on and the intended audience, we may go as low as 320px */
 /* index page */
 
 #hero-con {
-	background-color: #FBFBFB;
-	background: url("https://via.placeholder.com/428x458");
+	background: url("../images/scm-indexmobile-hero.jpg");
+	background-color:rgba(34, 34, 34, 0.4);
+	background-blend-mode: overlay;
 	height: 458px;
 }
 
@@ -287,7 +290,7 @@ you work on and the intended audience, we may go as low as 320px */
 
 #hero-gallery-con {
 	background-color: #FBFBFB;
-	background: url("https://via.placeholder.com/428x458");
+	background: url("../images/");
 	height: 458px;
 }
 
@@ -313,7 +316,7 @@ you work on and the intended audience, we may go as low as 320px */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: -5px;
+	margin-top: -20px;
 }
 
 .dot {
