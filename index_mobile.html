@@ -2,74 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Street Cat Mag - Home</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
 </head>
 <!-- students must convert divs to semantic tags -->
 <body>
+    <h1 class="hidden">Street Cat Magazine</h1>
 	<div id="container">
         
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
+        <section id="header-con">
+            <h2 class="hidden">Header Container</h2>
+            <header id="main-header" class="grid-con">
+                <h2 class="hidden">Header</h2>
+                <img src="images/scm-logo-mobile.svg" alt="Street Cat Mag Logo" id="header-logo">
                  <div id="mobile-nav">
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
                  </div>
-            </div>    
-        </div> 
+            </header>    
+        </section> 
 
         <main>
-            <div id="hero-con">
+            <h2 class="hidden">Content</h2>
+            <article id="hero-con">
+                <h2 class="hidden">Hero Image</h2>
                 <div class="grid-con">
-                    <div id="hero-text" class="box-color">
+                    <div id="hero-text">
+                        <a href="#" id="hero-story">Featured: How you can help street cats this winter!</a>
+                        <p>In this article from our latest edition, we look at different ways YOU can help out your local street kitties this winter...</p>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <div id="image-slider-con">
-                <h2>Blandit At Tuctor</h2>
+                <h2>Latest</h2>
                 <img src="https://via.placeholder.com/428x240" alt="image">
                 <!-- ascii symbols for <> -->
                 <span id="mobile-slider-left">&#60</span>
                 <span id="mobile-slider-right">&#62</span>
+                <p>Featured Cats from our latest release!</p>
             </div>
 
-            <div id="about-us-con">
-                <h2>Blandit At Tuctor</h2>   
-                    <div id="about-us-text-con">     
+            <section id="about-us-con">
+                <h2>Our Community</h2>   
+                    <article id="about-us-text-con">   
+                        <h2 class="hidden">About</h2>  
                         <div class="grid-con">
-                            <div id="about-us-text" class="box-color">
+                            <h2 class="hidden">About Our Community</h2>
+                            <div id="about-us-text">
+                                <h2 class="hidden">Join our community</h2>
+                                <a href="#" id="about-link">Join our community of dedicated contributors today!</a><br><br>
+                                <p>Think your cat has what it takes to be a model? We do too! Send us photos of your cat and fill out a submission form for a chance for your lucky feline to appear in the next edition of Street Cat Mag</p>
                             </div>
                         </div>      
-                    </div>  
+                    </article>  
                     <div class="grid-con" id="about-us-photos">
                         <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
                         <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
                         <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
                         <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
                     </div>         
-            </div>
+            </section>
 
-            <div id="contact-us-con">
-                <div class="grid-con">
-                    <div id="contact-text" class="box-color">
+            <section id="contact-us-con">
+                <h2 class="hidden">Contact Container</h2>
+                <article class="grid-con">
+                    <h2 class="hidden">Contact Us</h2>
+                    <div id="contact-text">
+                        <h3>Feel free to contact us</h3>
+                        <p>If you have any questions, comments, concerns, or anything at all that you would like to tell us, please do not hesitate to contact us!</p>
                     </div>
-                    <div id="contact-form" class="box-color">
-                    </div>
-                </div>
-            </div>
+                    <form id="contact-form" method="post" action="#">
+                        <h2 class="hidden">Contact Form</h2>
+                        <label for="name">Name: </label>        
+                        <input id="name" name="name" type="text"><br><br>
+    
+                        <label for="email">Email Address: </label>      
+                        <input id="email" name="email" type="email"><br><br>
+    
+                        <label for="subject">Subject: </label>        
+                        <input id="subject" name="subject" type="text"><br><br>
+    
+                        <label for="comments" class="hidden">Your Comments and Suggestions: </label>
+                        <textarea id="comments" name="comments">Please add your comments here!</textarea><br><br>
+    
+                        <input type="submit" value="Submit" id="submit-form"><br><br>
+                    </form>
+                </article>
+            </section>
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
+        <section id="footer-con">
+            <h2 class="hidden">Footer Container</h2>
+            <footer class="grid-con">
+                <h2 class="hidden">Footer</h2>
                 <div id="footer-box">
+                    <img src="images/scm-logo-mobile.svg" alt="Street Cat Mag Logo">
                 </div>
                 <div id="footer-newsletter">
+                    <a href="#">Newsletter - Sign Up</a>
                 </div>
-            </div>
-        </div>
+                <div id="footer-copyright">
+                    <p>Street Cat Magazine 2022</p>
+                </div>
+            </footer>
+        </section>
 
     </div>
 </body>
