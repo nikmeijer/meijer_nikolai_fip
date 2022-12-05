@@ -7,18 +7,51 @@
 </head>
 <!-- students must convert divs to semantic tags -->
 <body>
+    <h1 class="hidden">Street Cat Magazine</h1>
 	<div id="container">
         
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <div id="header-box1" class="box-color">
+        <section id="header-con">
+            <header id="main-header" class="grid-con">
+                <h2 class="hidden">Header</h2>
+                <div id="header-box1">
+                    <img src="images/scm-logo-wink.svg" alt="Street Cat Mag Logo" class="logo">
+                    <h2>Street Cat Mag</h2>
                 </div>
-                <div id="main-nav" class="box-color">
+                <div id="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="latest.html">Latest</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="active-page">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="submissions.html">Submissions</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="header-box2" class="box-color">
+                <div id="search-and-login">
+                    <h2 class="hidden">Search and Login</h4>
+                    <ul>
+                        <li>
+                            <a href="search">Search</a> <!--I do not know how search functionality is linked so i have just placed an unusable link-->
+                            <a href="search"><img src="images/scm-search-vector.svg" alt="search magnifying glass" id="search-vector"></a>
+                        </li>
+                        <li>
+                            <a href="login.html">Log In</a>
+                            <a href="login.html"><img src="images/scm-login-lock-vector.svg" alt="login lock" id="login-vector"></a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div> 
+            </header>
+        </section>  
 
         <main>
 
@@ -84,20 +117,46 @@
             </div>         
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
+        <section id="footer-con">
+            <footer class="grid-con" id="footer">
+                <h2 class="hidden">Footer</h2>
+                <div id="footer-logo">
+                    <img src="images/scm-logo-mobile.svg" alt="Street Cat Mag Logo with text" class="logo">
+                    <h2>Street Cat Mag</h2>
                 </div>
-                <div id="footer-nav" class="box-color">
+                <div id="footer-nav">
+                    <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="latest.html">Latest</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="active-page">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="submissions.html">Submissions</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="footer-newsletter1" class="box-color">
+                <div id="footer-newsletter1">
+                    <form id="newsletter-form" method="post" action="#">
+                        <label for="email">Newsletter - Sign Up</label>      
+                        <input id="nl-signup" name="email" type="email" placeholder="Email Address">
+                        <input type="submit" value="Submit" id="submit-nl-form">
+                    </form>
                 </div>
-                <div id="footer-newsletter2" class="box-color">
+                <div id="footer-copyright">
+                    <h2 class="hidden">Copyright</h2>
+                    <p>Street Cat Magazine 2022</p>
                 </div>
-                <div id="footer-social" class="box-color">
-                </div>
-            </div>
-        </div>
+            </footer>
+        </section>
 
     </div><!--end container-->  
 </body>
